@@ -51,6 +51,7 @@ import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
@@ -1174,8 +1175,9 @@ public class mod_Geology {
 	int CelestialBronzeSwordID;
 
 	
-	@PreInit
-	public void load(FMLPreInitializationEvent event){
+	//@PreInit
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event){
 		Configuration config=new Configuration(event.getSuggestedConfigurationFile());
 		
 		//Block Ore Config
@@ -1741,8 +1743,9 @@ public class mod_Geology {
 		config.save();
 	}
 	
-	@Init
-	public void load(FMLInitializationEvent event){
+	//@Init
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
 		proxy.registerRenderThings();
 		
 		//EnumToolMaterial ("NAME", can mine, uses, effenciency, damage vs entities, enchantability)
