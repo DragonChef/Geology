@@ -1899,6 +1899,7 @@ public class mod_Geology {
         MinecraftForge.setBlockHarvestLevel(SunstoneOre, "pickaxe", 6);
 		
 		GameRegistry.addSmelting(TinOreID, new ItemStack(TinIngot, 1), 1.0F);
+		GameRegistry.addSmelting(CopperOreID, new ItemStack(CopperIngot, 1), 1.0F);
 		
 	}
 	
