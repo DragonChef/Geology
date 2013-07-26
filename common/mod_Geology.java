@@ -1873,6 +1873,7 @@ public class mod_Geology {
 		gameRegisters();
 		languageRegisters();
 		
+		//Harvest Levels
 		MinecraftForge.setBlockHarvestLevel(TinOre, "pickaxe", 1);
 		MinecraftForge.setBlockHarvestLevel(CopperOre, "pickaxe", 1);
 		MinecraftForge.setBlockHarvestLevel(SilverOre, "pickaxe", 1);
@@ -1898,9 +1899,63 @@ public class mod_Geology {
         MinecraftForge.setBlockHarvestLevel(MoonstoneOre, "pickaxe", 6);
         MinecraftForge.setBlockHarvestLevel(SunstoneOre, "pickaxe", 6);
 		
+        //Smelting Recipies
 		GameRegistry.addSmelting(TinOreID, new ItemStack(TinIngot, 1), 1.0F);
 		GameRegistry.addSmelting(CopperOreID, new ItemStack(CopperIngot, 1), 1.0F);
+		GameRegistry.addSmelting(SilverOreID, new ItemStack(SilverIngot, 1), 1.0F);
+		GameRegistry.addSmelting(CobaltOreID, new ItemStack(CobaltIngot, 1), 1.0F);
+		GameRegistry.addSmelting(TitaniumOreID, new ItemStack(TitaniumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(MithrilOreID, new ItemStack(MithrilIngot, 1), 1.0F);
+		GameRegistry.addSmelting(TantalumOreID, new ItemStack(TantalumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(TungstenOreID, new ItemStack(TungstenIngot, 1), 1.0F);
+		GameRegistry.addSmelting(OrichalcumOreID, new ItemStack(OrichalcumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(AdamantiumOreID, new ItemStack(AdamantiumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(SkyIronOreID, new ItemStack(SkyIronIngot, 1), 1.0F);
+		GameRegistry.addSmelting(SinniumOreID, new ItemStack(SinniumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(AmberOreID, new ItemStack(Amber, 1), 1.0F);
+		GameRegistry.addSmelting(MalachiteOreID, new ItemStack(Malachite, 1), 1.0F);
+		GameRegistry.addSmelting(OpalOreID, new ItemStack(Opal, 1), 1.0F);
+		GameRegistry.addSmelting(PeridotOreID, new ItemStack(Peridot, 1), 1.0F);
+		GameRegistry.addSmelting(OnyxOreID, new ItemStack(Onyx, 1), 1.0F);
+		GameRegistry.addSmelting(AmethystOreID, new ItemStack(Amethyst, 1), 1.0F);
+		GameRegistry.addSmelting(TopazOreID, new ItemStack(Topaz, 1), 1.0F);
+		GameRegistry.addSmelting(StarSapphireOreID, new ItemStack(StarSapphire, 1), 1.0F);
+		GameRegistry.addSmelting(StarRubyOreID, new ItemStack(StarRuby, 1), 1.0F);
+		GameRegistry.addSmelting(BloodstoneOreID, new ItemStack(Bloodstone, 1), 1.0F);
+		GameRegistry.addSmelting(MoonstoneOreID, new ItemStack(Moonstone, 1), 1.0F);
+		GameRegistry.addSmelting(SunstoneOreID, new ItemStack(Sunstone, 1), 1.0F);
 		
+		//Storage Block Recipies
+		
+		//Small Brick Recipies
+		
+		//Large Brick Recipies
+		
+		//Stair Recipies
+		
+		//Door Recipies
+		
+		//Wall Recipies
+		
+		//Gate Recipies
+		
+		//Helmet Recipies
+		
+		//Chestplate Recipies
+		
+		//Pant Recipies
+		
+		//Boot Recipies
+		
+		//Pickaxe Recipies
+		
+		//Shovel Recipies
+		
+		//Hatchet Recipies
+		
+		//Hoe Recipies
+		
+		//Sword Recipies
 	}
 	
 	private static void gameRegisters(){
