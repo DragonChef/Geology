@@ -1,41 +1,5 @@
-package mod.Geology.common;
+package assets.Geology.common;
 
-import mod.Geology.common.blocks.BlockAdamantiumOre;
-import mod.Geology.common.blocks.BlockAmberOre;
-import mod.Geology.common.blocks.BlockCobaltOre;
-import mod.Geology.common.blocks.BlockCopperOre;
-import mod.Geology.common.blocks.BlockMithrilOre;
-import mod.Geology.common.blocks.BlockOrichalcumOre;
-import mod.Geology.common.blocks.BlockPeridotOre;
-import mod.Geology.common.blocks.BlockSilverOre;
-import mod.Geology.common.blocks.BlockSinniumOre;
-import mod.Geology.common.blocks.BlockSkyIronOre;
-import mod.Geology.common.blocks.BlockStarRubyOre;
-import mod.Geology.common.blocks.BlockTantalumOre;
-import mod.Geology.common.blocks.BlockTinOre;
-import mod.Geology.common.blocks.BlockTitaniumOre;
-import mod.Geology.common.blocks.BlockTungstenOre;
-import mod.Geology.common.items.ItemAdamantiumIngot;
-import mod.Geology.common.items.ItemAmber;
-import mod.Geology.common.items.ItemAmethyst;
-import mod.Geology.common.items.ItemBloodstone;
-import mod.Geology.common.items.ItemCobaltIngot;
-import mod.Geology.common.items.ItemCopperIngot;
-import mod.Geology.common.items.ItemMithrilIngot;
-import mod.Geology.common.items.ItemMoonstone;
-import mod.Geology.common.items.ItemOnyx;
-import mod.Geology.common.items.ItemOrichalcumIngot;
-import mod.Geology.common.items.ItemPeridot;
-import mod.Geology.common.items.ItemSilverIngot;
-import mod.Geology.common.items.ItemSinniumIngot;
-import mod.Geology.common.items.ItemSkyIronIngot;
-import mod.Geology.common.items.ItemStarRuby;
-import mod.Geology.common.items.ItemStarSapphire;
-import mod.Geology.common.items.ItemSunstone;
-import mod.Geology.common.items.ItemTantalumIngot;
-import mod.Geology.common.items.ItemTinIngot;
-import mod.Geology.common.items.ItemTitaniumIngot;
-import mod.Geology.common.items.ItemTungstenIngot;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -46,10 +10,44 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
+import assets.Geology.common.blocks.BlockAdamantiumOre;
+import assets.Geology.common.blocks.BlockAmberOre;
+import assets.Geology.common.blocks.BlockCobaltOre;
+import assets.Geology.common.blocks.BlockCopperOre;
+import assets.Geology.common.blocks.BlockMithrilOre;
+import assets.Geology.common.blocks.BlockOrichalcumOre;
+import assets.Geology.common.blocks.BlockPeridotOre;
+import assets.Geology.common.blocks.BlockSilverOre;
+import assets.Geology.common.blocks.BlockSinniumOre;
+import assets.Geology.common.blocks.BlockSkyIronOre;
+import assets.Geology.common.blocks.BlockStarRubyOre;
+import assets.Geology.common.blocks.BlockTantalumOre;
+import assets.Geology.common.blocks.BlockTinOre;
+import assets.Geology.common.blocks.BlockTitaniumOre;
+import assets.Geology.common.blocks.BlockTungstenOre;
+import assets.Geology.common.items.ItemAdamantiumIngot;
+import assets.Geology.common.items.ItemAmber;
+import assets.Geology.common.items.ItemAmethyst;
+import assets.Geology.common.items.ItemBloodstone;
+import assets.Geology.common.items.ItemCobaltIngot;
+import assets.Geology.common.items.ItemCopperIngot;
+import assets.Geology.common.items.ItemMithrilIngot;
+import assets.Geology.common.items.ItemMoonstone;
+import assets.Geology.common.items.ItemOnyx;
+import assets.Geology.common.items.ItemOrichalcumIngot;
+import assets.Geology.common.items.ItemPeridot;
+import assets.Geology.common.items.ItemSilverIngot;
+import assets.Geology.common.items.ItemSinniumIngot;
+import assets.Geology.common.items.ItemSkyIronIngot;
+import assets.Geology.common.items.ItemStarRuby;
+import assets.Geology.common.items.ItemStarSapphire;
+import assets.Geology.common.items.ItemSunstone;
+import assets.Geology.common.items.ItemTantalumIngot;
+import assets.Geology.common.items.ItemTinIngot;
+import assets.Geology.common.items.ItemTitaniumIngot;
+import assets.Geology.common.items.ItemTungstenIngot;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Init;
-import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -57,7 +55,6 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 //other imports
-import net.minecraftforge.common.Configuration;
 
 @Mod(modid="Geology", name="Geology", version="Alpha Release")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
@@ -69,7 +66,7 @@ public class mod_Geology {
 	        return new ItemStack(Item.skull);
 	    }
 	};
-    @SidedProxy(clientSide="mod.Geology.common.ClientProxy", serverSide="mod.Geology.common.ServerProxy")
+    @SidedProxy(clientSide="assets.Geology.common.ClientProxy", serverSide="assets.Geology.common.ServerProxy")
 	public static ServerProxy proxy;
 	
 

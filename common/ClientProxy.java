@@ -1,4 +1,4 @@
-package mod.Geology.common;
+package assets.Geology.common;
 
 public class ClientProxy extends ServerProxy{
 	

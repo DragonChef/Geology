@@ -1,4 +1,4 @@
-package mod.Geology.common;
+package assets.Geology.common;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
