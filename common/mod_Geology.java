@@ -59,7 +59,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 //other imports
 import net.minecraftforge.common.Configuration;
 
-@Mod(modid="Geology", name="Geology", version="0.0.1A")
+@Mod(modid="Geology", name="Geology", version="Alpha Release")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 
 public class mod_Geology {
